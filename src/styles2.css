@@ -1,0 +1,21 @@
+.w-450 {
+    width:20%;
+}
+.vh-100 {
+    min-height: 100%;
+    margin-left: 50px;
+}
+body{
+    background-image: url(loginpic.jpg);
+    background-color: rgba(58, 55, 55, 0.315);
+    background-size: cover;
+}
+.form-label{
+    font-weight: 1000;
+}
+.link-secondary{
+    font-weight: 1000;
+    text-decoration: none;
+    color: black; 
+}
+

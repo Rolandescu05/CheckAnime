@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgba(58, 55, 55, 0.315);
+    background-image: url(kame.jpg);
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a131e;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.navbar a {
+    color: #dce4ea;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a:hover:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    background-color: #dce4ea;
+}
+
+.navbar a i {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+    margin: 0 20px;
+}
+
+.logo-text {
+    display: inline-block;
+    background-color: #0a131e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.imgl {
+    width: 5%;
+    height: 5%;
+    margin-bottom: 5px;
+}
+
+div {
+    padding: 2% 4%;
+}
+
+.div2 {
+    width: 70%;
+    height: 100%; 
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: rgb(38, 31, 31);
+    margin-left: 13%;
+}
+
+.div2 p {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(231, 238, 246);
+    font-family: 'Shantell Sans', sans-serif;
+}
+
+.anime-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #0a131e;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    max-width: 50rem;
+  }
+  
+  .anime-info h1 {
+    margin-top: 0;
+    font-size: 3rem;
+    text-align: center;
+    color: #F77F00;
+    text-shadow: 1px 1px 0px #FDB813;
+    font-family: 'Comic Sans MS', cursive;
+  }
+  
+  .anime-image {
+    margin-top: 2rem;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .anime-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    filter: drop-shadow(1px 1px 0px #FDB813);
+  }
+  .favorite-btn {
+    background-color: #a07f1d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .favorite-btn:hover {
+    background-color: #ffb300;
+  }
+  
+  .favorite-btn:focus {
+    outline: none;
+  }
+  .anime-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+   .anime-details h2{
+    color:white;
+  }
+  .anime-details h4 {
+    color:white;
+    font-size: 20px;
+  }
+  .anime-details h3 {
+    color:white;
+  }
+  form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  form input[type="submit"]:focus {
+    outline: none;
+  }
+  
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .anime-rating h2 {
+    font-size: 2rem;
+    color: #F77F00;
+    margin: 0;
+    text-shadow: 1px 1px 0px #FDB813;
+    font-family: 'Comic Sans MS', cursive;
+  }
+  
+  .rating {
+    color: #FFA500;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  
+  .anime-description {
+    margin-top: 2rem;
+    text-align: justify;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 1.5rem;
+    color: #5C5C5C;
+    text-shadow: 1px 1px 0px #FDB813;
+  }
+  
+  .anime-stats {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Comic Sans MS', cursive;
+    color: #5C5C5C;
+    text-shadow: 1px 1px 0px #FDB813;
+  }
+  
+  .anime-stats ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .anime-stats li {
+    margin-bottom: 1rem;
+  }
+  .review-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .review .user {
+    font-weight: bold;
+    color: #8b0000;
+  }
+  
+  .review .date {
+    font-style: italic;
+    font-size: 0.8em;
+    color: #ff7f50;
+  }
+  
+  .review .comment {
+    margin-top: 5px;
+    color: #ff7f50;
+  }
+
+  
+  @media (max-width: 768px) {
+    .anime-info {
+    padding: 1rem;
+    }
+    
+    .anime-image {
+    margin-top: 1rem;
+    }
+    
+    .anime-details {
+    margin-top: 1rem;
+    }
+    
+    .anime-rating h2 {
+    font-size: 1.5rem;
+    }
+    
+    .anime-rating .star {
+    font-size: 2rem;
+    }
+    
+    .anime-description {
+    font-size: 1.2rem;
+    }
+    
+    .anime-stats {
+    font-size: 1rem;
+    }
+  }
+footer{
+    background-color: rgb(21, 21, 21);
+  }
+  .footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+  }
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+  }
+  .socialIcons a{
+    text-decoration: none;
+    padding:10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;;
+  }
+.socialIcons a i{
+   font-size: 2em;
+   color:black;
+   opacity: 0.9; 
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin:30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+} 
+.footerBottom{
+    background-color: rgb(21, 21, 21);
+    padding:20px;
+    text-align: center;
+}
+.footerBottom p{
+    color:white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+} 
+
+@media (max-width:700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin:10px;
+    } 
+}
